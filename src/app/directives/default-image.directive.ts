@@ -1,19 +1,19 @@
 import { Directive, Input, HostBinding, AfterViewInit } from '@angular/core';
 
 @Directive({
-  selector: '[appDefaultImage]',
+  selector: '[defaultImage]',
 })
 export class DefaultImageDirective implements AfterViewInit {
   @HostBinding('src')
   @Input() src!: string;
 
-  @Input() appDefaultImage!: string;
+  @Input() defaultImage!: string;
 
   async ngAfterViewInit(): Promise<void> {
     const canDisplay = await this.loadImage(this.src);
 
     if (!canDisplay) {
-      this.setSrc(this.appDefaultImage);
+      this.setSrc(this.defaultImage);
     }
   }
 
