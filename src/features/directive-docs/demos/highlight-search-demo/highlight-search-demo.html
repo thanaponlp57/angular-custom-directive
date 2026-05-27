@@ -1,0 +1,15 @@
+<div class="demo-field">
+  <input
+    #searchBox
+    type="search"
+    class="demo-search"
+    placeholder="ค้นหา..."
+    [value]="term()"
+    (input)="setTerm(searchBox.value)"
+  />
+  <ul class="demo-list">
+    @for (item of items; track item) {
+      <li><span [appHighlightSearch]="term()" [text]="item"></span></li>
+    }
+  </ul>
+</div>

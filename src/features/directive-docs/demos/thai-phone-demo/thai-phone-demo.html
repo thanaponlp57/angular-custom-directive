@@ -1,0 +1,13 @@
+<label class="demo-field">
+  <span class="demo-label">เบอร์โทรศัพท์</span>
+  <input appThaiPhone [formControl]="phone" inputmode="tel" maxlength="12" placeholder="08X-XXX-XXXX" />
+</label>
+@if (phone.value) {
+  <p class="demo-readout">
+    @if (phone.errors?.['thaiPhone']) {
+      <span style="color: #dc2626">รูปแบบไม่ถูกต้อง</span>
+    } @else {
+      <span style="color: #16a34a">ถูกต้อง ✓</span>
+    }
+  </p>
+}

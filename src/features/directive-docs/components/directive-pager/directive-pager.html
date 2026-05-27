@@ -1,0 +1,34 @@
+<nav class="pager" aria-label="Directive navigation">
+  <div class="pager-nav">
+    <button
+      type="button"
+      class="pager-link prev"
+      [disabled]="isFirst()"
+      (click)="go(currentIndex() - 1)"
+    >
+      <div class="pager-direction">&larr; Previous</div>
+      <div class="pager-title">{{ prevLabel() ?? '—' }}</div>
+    </button>
+    <button
+      type="button"
+      class="pager-link next"
+      [disabled]="isLast()"
+      (click)="go(currentIndex() + 1)"
+    >
+      <div class="pager-direction">Next &rarr;</div>
+      <div class="pager-title">{{ nextLabel() ?? '—' }}</div>
+    </button>
+  </div>
+
+  <ul class="pagination">
+    @for (page of pages(); track page) {
+      <li class="page-item" [class.active]="page === currentIndex()">
+        <button type="button" class="page-link" (click)="go(page)">{{ page + 1 }}</button>
+      </li>
+    }
+  </ul>
+
+  <div class="page-counter">
+    Page <span class="current">{{ currentIndex() + 1 }}</span> &mdash; of {{ total() }} directives
+  </div>
+</nav>

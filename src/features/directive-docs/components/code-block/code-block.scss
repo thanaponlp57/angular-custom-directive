@@ -1,0 +1,27 @@
+.code-block {
+  background: var(--code-bg);
+  color: var(--code-ink);
+  border-radius: 4px;
+  padding: 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  overflow-x: auto;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.code-block pre {
+  margin: 0;
+  color: inherit;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.filename {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}

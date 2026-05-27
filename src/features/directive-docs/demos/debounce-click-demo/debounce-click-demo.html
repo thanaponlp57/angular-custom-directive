@@ -1,0 +1,11 @@
+<div class="demo-field" style="align-items: center;">
+  <button
+    type="button"
+    (appDebounceClick)="onClick()"
+    [debounceTime]="600"
+    style="padding: 0.6rem 1.5rem; border: 1px solid var(--ink); border-radius: 4px; background: var(--ink); color: var(--paper); cursor: pointer;"
+  >
+    คลิกรัวๆ
+  </button>
+</div>
+<p class="demo-readout">Emitted: <code>{{ count() }}</code></p>

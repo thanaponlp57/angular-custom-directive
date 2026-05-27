@@ -1,0 +1,28 @@
+/* Global design tokens — consumed by all directive-docs components */
+:root {
+  --ink: #1a1a1a;
+  --ink-2: #3a3a3a;
+  --muted: #6b6b6b;
+  --line: #e8e6e1;
+  --line-2: #d9d6cf;
+  --paper: #faf8f3;
+  --paper-2: #f4f1ea;
+  --accent: #b8542c;
+  --accent-soft: #f0e4dc;
+  --code-bg: #1f1d1a;
+  --code-ink: #e8e6e1;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  background: var(--paper);
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}

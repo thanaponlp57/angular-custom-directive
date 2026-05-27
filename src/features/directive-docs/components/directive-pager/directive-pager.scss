@@ -1,0 +1,102 @@
+.pager {
+  border-top: 1px solid var(--line);
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+.pager-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.pager-link {
+  flex: 1;
+  max-width: 48%;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  text-align: left;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+}
+.pager-link:hover:not(:disabled) {
+  border-color: var(--ink);
+  background: #fff;
+}
+.pager-link:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.pager-link.next {
+  text-align: right;
+}
+.pager-direction {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+.pager-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  list-style: none;
+  padding: 0;
+}
+.page-item .page-link {
+  border: none;
+  background: transparent;
+  color: var(--ink-2);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.page-item .page-link:hover {
+  background: var(--paper-2);
+  color: var(--ink);
+}
+.page-item.active .page-link {
+  background: var(--ink);
+  color: var(--paper);
+}
+.page-counter {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 1.5rem;
+}
+.page-counter .current {
+  color: var(--ink);
+}
+@media (max-width: 576px) {
+  .pager-nav {
+    flex-direction: column;
+  }
+  .pager-link,
+  .pager-link.next {
+    max-width: 100%;
+    text-align: left;
+  }
+}

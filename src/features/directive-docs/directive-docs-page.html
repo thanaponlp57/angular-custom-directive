@@ -1,0 +1,54 @@
+<app-top-bar version="v1.0" />
+
+<main class="page-wrap">
+  <app-directive-header
+    [type]="doc().type"
+    [name]="doc().name"
+    [lede]="doc().lede"
+    [index]="activeIndex()"
+    [total]="total"
+    [meta]="doc().meta"
+  />
+
+  <app-section-label>Example</app-section-label>
+  <app-preview-card [caption]="doc().previewCaption">
+    @switch (doc().slug) {
+      @case ('thai-citizen-id') {
+        <app-thai-citizen-id-demo />
+      }
+      @case ('thai-phone') {
+        <app-thai-phone-demo />
+      }
+      @case ('thai-currency') {
+        <app-thai-currency-demo />
+      }
+      @case ('debounce-click') {
+        <app-debounce-click-demo />
+      }
+      @case ('highlight-search') {
+        <app-highlight-search-demo />
+      }
+      @default {
+        <p class="text-muted">Demo coming soon.</p>
+      }
+    }
+  </app-preview-card>
+
+  <app-section-label>Template</app-section-label>
+  <app-code-block
+    [code]="doc().code.content"
+    [filename]="doc().code.filename"
+    [language]="doc().code.language"
+  />
+
+  <app-section-label>Notes</app-section-label>
+  <app-notes-block [notes]="doc().notes" />
+
+  <app-directive-pager
+    [currentIndex]="activeIndex()"
+    [total]="total"
+    [prevLabel]="prevLabel()"
+    [nextLabel]="nextLabel()"
+    (navigate)="goTo($event)"
+  />
+</main>

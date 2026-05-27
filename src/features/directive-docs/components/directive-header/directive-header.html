@@ -1,0 +1,19 @@
+<div class="eyebrow">
+  <span class="dot"></span>
+  <span>{{ type() }}</span>
+  <span class="sep"></span>
+  <span>{{ index() + 1 }} / {{ total() }}</span>
+</div>
+
+<h1 class="directive-name">{{ name() }}</h1>
+
+<p class="lede">{{ lede() }}</p>
+
+<div class="meta-row">
+  @for (cell of meta(); track cell.label) {
+    <div class="meta-cell">
+      <span class="meta-label">{{ cell.label }}</span>
+      <span class="meta-value">{{ cell.value }}</span>
+    </div>
+  }
+</div>

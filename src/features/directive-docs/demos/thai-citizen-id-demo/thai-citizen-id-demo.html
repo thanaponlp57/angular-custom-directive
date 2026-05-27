@@ -1,0 +1,13 @@
+<label class="demo-field">
+  <span class="demo-label">เลขประจำตัวประชาชน</span>
+  <input appThaiCitizenId [formControl]="citizenId" maxlength="17" inputmode="numeric" placeholder="X-XXXX-XXXXX-XX-X" />
+</label>
+@if (citizenId.value) {
+  <p class="demo-readout">
+    @if (citizenId.errors?.['thaiCitizenId']) {
+      <span style="color: #dc2626">ยังไม่ถูกต้อง</span>
+    } @else {
+      <span style="color: #16a34a">ถูกต้อง ✓</span>
+    }
+  </p>
+}

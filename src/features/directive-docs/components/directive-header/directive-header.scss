@@ -1,0 +1,72 @@
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.eyebrow .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+}
+.eyebrow .sep {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.directive-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  margin: 0 0 1.25rem;
+}
+.lede {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+  max-width: 60ch;
+  margin-bottom: 2rem;
+}
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 3.5rem;
+}
+.meta-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.25rem 0;
+}
+.meta-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.meta-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+@media (max-width: 576px) {
+  .meta-row {
+    gap: 1rem 1.5rem;
+  }
+}

@@ -1,0 +1,26 @@
+.preview {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2.75rem 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.preview::before {
+  content: 'PREVIEW';
+  position: absolute;
+  top: 0.65rem;
+  left: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+}
+.preview-caption {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}

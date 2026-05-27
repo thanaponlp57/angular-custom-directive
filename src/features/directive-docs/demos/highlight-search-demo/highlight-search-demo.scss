@@ -1,0 +1,31 @@
+.demo-field {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.demo-search {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--line-2);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.demo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.demo-list li {
+  padding: 0.55rem 0.25rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+.demo-list li:last-child {
+  border-bottom: none;
+}
+:host ::ng-deep mark.highlight {
+  background: #fef08a;
+  font-weight: 600;
+  padding: 0 2px;
+  border-radius: 2px;
+}

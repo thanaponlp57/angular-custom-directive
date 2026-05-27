@@ -1,0 +1,31 @@
+.demo-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.demo-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.demo-field input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--line-2);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.demo-readout {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.demo-readout code {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 0.05em 0.4em;
+  border-radius: 2px;
+}
