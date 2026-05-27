@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "angular-custom-pipe-example": {
+    "angular-custom-directive-example": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -64,10 +64,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-custom-pipe-example:build:production"
+              "buildTarget": "angular-custom-directive-example:build:production"
             },
             "development": {
-              "buildTarget": "angular-custom-pipe-example:build:development"
+              "buildTarget": "angular-custom-directive-example:build:development"
             }
           },
           "defaultConfiguration": "development"

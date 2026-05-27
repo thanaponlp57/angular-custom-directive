@@ -7,9 +7,6 @@
 ภายในรวมตัวอย่าง custom directive ที่ใช้งานจริง เช่น `thaiCurrency`, `thaiPhone`,
 `thaiCitizenId` และ `debounceClick` พร้อมหน้า docs ที่แสดงโค้ด ตัวอย่าง และคำอธิบายของแต่ละตัว
 
-> หมายเหตุ: ชื่อโปรเจค (`angular-custom-pipe-example`) ติดมาจาก template ตอนเริ่มต้น
-> แต่เนื้อหาจริงของโปรเจคเป็นเรื่อง **custom directives** ไม่ใช่ pipe
-
 ## ตัวอย่างหน้าจอ (Screenshot)
 
 ![หน้า docs ของ directive appThaiCitizenId](docs/screenshots/directive-docs.png)
